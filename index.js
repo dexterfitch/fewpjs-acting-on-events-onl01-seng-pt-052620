@@ -11,7 +11,11 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-
+  let rightString = dodger.style.right.slice(0, -2);
+  let rightNum = parseInt(rightString);
+  if (rightNum < 400) {
+    dodger.style.right = `${rightNum + 1}px`;
+  }
 }
 
 document.addEventListener("keydown", function(pressed) {
