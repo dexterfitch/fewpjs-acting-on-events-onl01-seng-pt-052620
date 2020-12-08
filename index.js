@@ -11,10 +11,10 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  let rightString = dodger.style.right.slice(0, -2);
-  let rightNum = parseInt(rightString);
-  if (rightNum < 400) {
-    dodger.style.right = `${rightNum + 1}px`;
+  let leftString = dodger.style.left.slice(0, -2);
+  let leftNum = parseInt(leftString);
+  if (leftNum < 400) {
+    dodger.style.left = `${leftNum + 1}px`;
   }
 }
 
